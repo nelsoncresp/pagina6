@@ -1,0 +1,27 @@
+<br>
+<div class="relative overflow-hidden w-full sm:w-3/4 lg:w-1/2 mx-auto">
+    <!-- Contenedor del carrusel -->
+    <div class="carousel flex transition-transform duration-500 ease-in-out" 
+         [ngStyle]="{'transform': 'translateX(' + translateX + '%)'}">
+      
+      <!-- Imagenes del carrusel -->
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="../../../assets/reel-1.jpg" alt="Imagen 1" class="" height="100px" >
+      </div>
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="../../../assets/reel-2.jpg" alt="Imagen 2" class="w-full h-full object-cover">
+      </div>
+      <div class="carousel-item w-full flex-shrink-0">
+        <img src="../../../assets/reel-3.jpg" alt="Imagen 3" class="w-full h-full object-cover">
+      </div>
+    </div>
+  
+    <!-- Botones de navegación -->
+    <button (click)="moveCarousel('prev')" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-2 rounded-full">
+      &#10094;
+    </button>
+    <button (click)="moveCarousel('next')" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-2 rounded-full">
+      &#10095;
+    </button>
+  </div>
+  
